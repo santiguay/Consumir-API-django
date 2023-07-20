@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mi pagina</title>
+  </head>
+  <body class="bg-orange-300">
+    
+    <!--flexbox-->
+    <!-- encerramos el div contenedor para poder centrar todo el contenido-->
+    <div class="flex justify-center mt-5">
+       
+      <!-- contenedor de todo el contenido (imagen escrito y texto)-->
+      <div
+        class="bg-white max-w-sm border border-gray-200 rounded-lg shadow-lg"
+      >
+        <img
+          class="rounded-t-lg mx-auto rounded-full  shadow-xl"
+          src= "{{ personaje.image }} "
+          alt="aurora boreal"
+        />
+        <div class="p-5">
+          <h5 class="mb-2 text-xl text-center font-bold">
+            {{ personaje.name }} 
+          </h5>
+          <p class="mb-3 font-normal text-gray-600 text-center">
+            "Rick and Morty" es una serie animada de ciencia ficción que sigue las aventuras del brillante pero alcohólico científico, Rick, y su tímido y ansioso nieto, Morty, mientras viajan por el espacio y el tiempo. Juntos, exploran realidades alternativas, se enfrentan a alienígenas y lidian con problemas familiares. La serie es conocida por su humor negro, sátira y exploración de temas complejos. A través de episodios llenos de comedia y locura, "Rick and Morty" ofrece una mirada excéntrica y única en el universo multidimensional de la ciencia ficción.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
